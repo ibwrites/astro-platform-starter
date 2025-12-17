@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ibwrites.in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SAME Magic Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2>ibwrites.in</h2>
+            <ul class="nav-menu">
+                <li><a href="ibwrites.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="services.html" class="nav-link">✍️ Services</a></li>
+                <li><a href="games.html" class="nav-link">🎮 Games</a></li>
+                <li><a href="contact.html" class="nav-link active">📧 Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Get Help Zone -->
+    <main class="main-content">
+        <section class="hero">
+            <h1>📧 Get Help & Connect</h1>
+            <p>Ready for writing magic? Let's talk!</p>
+        </section>
+        
+        <section class="contact-grid">
+            <div class="contact-card">
+                <h2>💬 Quick Chat</h2>
+                <p><strong>Email:</strong> hello@ibwrites.in</p>
+                <p><strong>WhatsApp:</strong> +91-XXXXXXXXXX</p>
+                <p><strong>LinkedIn:</strong> /in/yourprofile</p>
+            </div>
+            <div class="contact-card">
+                <h2>📝 Message Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Project? SEO blogs, tech docs, scripts..." rows="5" required></textarea>
+                    <button type="submit">Send Message 🚀</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('📧 Message sent! I will reply in 24 hours. Thank you! 🎉');
+            this.reset();
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 ibwrites.in | Made with ❤️ on Netlify</p>
+    </footer>
+</body>
+</html>
